@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 왼쪽 사이드바 -->
+    <nav class="sidebar">
+        <div class="profile">
+            <img src="image/profile.jpg" alt="Profile Picture">
+            <h1>차우열</h1>
+            <p>백엔드 개발자</p>
+        </div>
+        <ul>
+            <li><a href="#about-me">ABOUT ME</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <!-- <li><a href="#education">EDUCATION</a></li>
+            <li><a href="#contact">CONTACT</a></li> -->
+        </ul>
+    </nav>
+
+    <!-- 메인 컨텐츠 -->
+    <div class="content">
+        <section id="about-me" data-aos="fade-up">
+            <h2>About Me</h2>
+            <p>될 때 까지 하는 개발자 차우열입니다. 쉽게 풀리지 않는 문제를 고민하고 해결하는 것을 즐깁니다.</p>
+            <p>각 프로젝트에서 비용과 성능을 최적화하고자 하며, 최적화된 서버가 온라인 게임의 재미를 향상시킨다고 생각합니다.</p>
+        </section>
+
+        <section id="skills" data-aos="fade-up">
+            <h2>Skills</h2>
+            <p>
+                <p>Language</p>
+                <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" />
+                <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white" />
+                <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+                <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" />
+                <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" />
+            </p>
+            <p>
+                <p>Framework</p>
+                <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" />
+                <img src="https://img.shields.io/badge/.Net Core-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
+            </p>
+            <p>
+                <p>DB & Cache</p>
+                <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+                <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" />
+                <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
+            </p>
+            <p>
+                <p>Network & Message Brokers</p>
+                <img src="https://img.shields.io/badge/WebSocket-000000?style=for-the-badge&logo=websocket&logoColor=white" />
+                <img src="https://img.shields.io/badge/gRPC-00C5E0?style=for-the-badge&logo=grpc&logoColor=white" />
+                <img src="https://img.shields.io/badge/Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white" />
+            </p>
+            <p>
+                <p>Collaborate</p>
+                <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+                <img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white" />
+            </p>
+            <p>
+                <p>Container</p>
+                <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+                <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
+            </p>
+        </section>
+        <section id="projects" data-aos="fade-up">
+            <h2>Projects</h2>
+            <div class="project-container">        
+                <div class="project-card">
+                    <!-- <img src="https://via.placeholder.com/300x150" alt="Project Thumbnail"> -->
+
+                    <h3>.Net Core Project</h3>
+                    <p>.NET Core, RabbitMQ, gRPC, docker, kubernetes 등을 학습하기 위한 프로젝트입니다.</p>
+                    <ul>
+                        <li>.NET Core로 API 구현</li>
+                        <li>로컬에서 Docker, kubernetes를 사용한 배포</li>
+                        <li>gRPC, RabbitMQ를 사용한 서비스간 통신</li>
+                    </ul>
+                    <a href="https://github.com/dtdtdzNetCore" target="_blank">View on GitHub</a>
+                </div>
+        
+                <div class="project-card">
+                    <h3>Camus Chat</h3>
+                    <p>AI 모델을 사용한 채팅 필터링 솔루션으로, 악성 채팅을 필터링하기 위해 Kafka와 AI 모델을 연결했습니다.</p>
+                    <ul>
+                        <li>KcElectra와 HyperClovaX로 악성 채팅 필터링 모델 구현</li>
+                        <li>AWS Lambda와 Docker를 활용한 확장 가능한 서비스 배포</li>
+                        <li>Kafka로 채팅 서비스와 필터링 서비스 간 실시간 통신</li>
+                    </ul>
+                    <a href="https://github.com/Camus-chat" target="_blank">View on GitHub</a>
+                </div>
+        
+                <div class="project-card">
+                    <h3>NoColored</h3>
+                    <p>실시간 멀티플레이 대전 웹게임으로, 웹소켓을 이용한 서버-클라이언트 통신과 서버사이드 물리 계산을 구현했습니다.</p>
+                    <ul>
+                        <li>서버에서 게임 로직 및 물리 계산 수행</li>
+                        <li>클라이언트-서버 물리 계산 일치 시도</li>
+                        <li>JMeter로 부하 테스트 진행 (600개 세션 유지)</li>
+                    </ul>
+                    <a href="https://github.com/NoColored" target="_blank">View on GitHub</a>
+                </div>
+        
+                <div class="project-card">
+                    <h3>Code Algorithm Live</h3>
+                    <p>알고리즘 문제를 추천하고 멘토링할 수 있는 협업 플랫폼입니다.</p>
+                    <ul>
+                        <li>유저의 푼 문제 정보를 기반으로 문제 추천 알고리즘 구현</li>
+                        <li>Redis 캐싱을 통해 RDB 부하를 감소시킴</li>
+                        <li>멘토링 중 발생하는 코드 편집 기록을 저장 및 복원</li>
+                    </ul>
+                    <a href="https://github.com/Coala-Code-Algorithm-Live/Coala" target="_blank">View on GitHub</a>
+                </div>
+        
+            </div>
+        </section>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <!-- 다른 섹션들 계속 추가 -->
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
